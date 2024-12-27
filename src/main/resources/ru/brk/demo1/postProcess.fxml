@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.brk.demo1.PostProcessController">
+    <TableView fx:id="resultsTable" layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="rodIdColumn" text="Стержень" />
+            <TableColumn fx:id="displacementStartColumn" text="Перемещение в начале" />
+            <TableColumn fx:id="displacementEndColumn" text="Перемещение в конце" />
+            <TableColumn fx:id="forceStartColumn" text="Продольная сила в начале" />
+            <TableColumn fx:id="stressStartColumn" text="Напряжение в начале" />
+            <TableColumn fx:id="allowableStressColumn" text="Допустимое напряжение" />
+            <TableColumn fx:id="checkColumn" text="Проверка" />
+        </columns>
+    </TableView>
+    <Button fx:id="backButton" layoutX="14.0" layoutY="420.0" text="Назад" />
+</AnchorPane>
